@@ -1,0 +1,14 @@
+name: Simple Workflow
+
+on: 
+  push:
+    branches: 
+      - main  
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Hello, World!
+        run: echo "MEOW!"
