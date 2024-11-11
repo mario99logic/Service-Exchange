@@ -1,9 +1,11 @@
 name: Simple Workflow
 
+# Add workflow_dispatch alongside push to allow manual triggering
 on: 
   push:
     branches: 
       - main  
+  workflow_dispatch:  # This enables manual triggering
 
 jobs:
   say-hello:
